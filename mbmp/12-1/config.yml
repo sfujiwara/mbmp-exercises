@@ -1,0 +1,22 @@
+name: "Food Manufacture 1"
+final_product_price: 150
+
+oil_groups:
+
+  - name: "VEGETABLE"
+    limit: 200
+    oils:
+      - name: "VEG1"
+        hardness: 8.8
+      - name: "VEG2"
+        hardness: 6.1
+
+  - name: "NON_VEGETABLE"
+    limit: 250
+    oils:
+      - name: "OIL1"
+        hardness: 2.0
+      - name: "OIL2"
+        hardness: 4.2
+      - name: "OIL3"
+        hardness: 5.0

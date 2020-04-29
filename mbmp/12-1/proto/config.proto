@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+message Oil {
+  string name = 1;
+  float hardness = 2;
+}
+
+message OilGroup {
+  string name = 1;
+  repeated Oil oils = 2;
+  int32 limit = 3;
+}
+
+message Problem {
+  string name = 1;
+  int32 final_product_price = 2;
+  repeated OilGroup oil_groups = 3;
+}
