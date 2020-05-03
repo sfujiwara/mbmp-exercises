@@ -1,0 +1,65 @@
+name: "Food Manufacture 1"
+final_product_price: 150
+oil_groups {
+  name: "VEGETABLE"
+  oils {
+    name: "VEG1"
+    hardness: 8.800000190734863
+    prices: 110
+    prices: 130
+    prices: 110
+    prices: 120
+    prices: 100
+    prices: 90
+  }
+  oils {
+    name: "VEG2"
+    hardness: 6.099999904632568
+    prices: 120
+    prices: 130
+    prices: 140
+    prices: 110
+    prices: 120
+    prices: 140
+  }
+  refinement_limit: 200
+}
+oil_groups {
+  name: "NON_VEGETABLE"
+  oils {
+    name: "OIL1"
+    hardness: 2.0
+    prices: 130
+    prices: 110
+    prices: 130
+    prices: 120
+    prices: 150
+    prices: 140
+  }
+  oils {
+    name: "OIL2"
+    hardness: 4.199999809265137
+    prices: 110
+    prices: 90
+    prices: 100
+    prices: 120
+    prices: 110
+    prices: 80
+  }
+  oils {
+    name: "OIL3"
+    hardness: 5.0
+    prices: 115
+    prices: 115
+    prices: 95
+    prices: 125
+    prices: 105
+    prices: 135
+  }
+  refinement_limit: 250
+}
+storage_limit: 1000
+storage_cost: 5
+hardness_lower_limit: 3
+hardness_upper_limit: 6
+n_periods: 6

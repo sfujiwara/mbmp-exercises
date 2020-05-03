@@ -18,7 +18,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='',
   syntax='proto3',
   serialized_options=None,
-  serialized_pb=b'\n\x12proto/config.proto\"%\n\x03Oil\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x10\n\x08hardness\x18\x02 \x01(\x02\";\n\x08OilGroup\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x12\n\x04oils\x18\x02 \x03(\x0b\x32\x04.Oil\x12\r\n\x05limit\x18\x03 \x01(\x05\"S\n\x07Problem\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x1b\n\x13\x66inal_product_price\x18\x02 \x01(\x05\x12\x1d\n\noil_groups\x18\x03 \x03(\x0b\x32\t.OilGroupb\x06proto3'
+  serialized_pb=b'\n\x12proto/config.proto\"5\n\x03Oil\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x10\n\x08hardness\x18\x02 \x01(\x02\x12\x0e\n\x06prices\x18\x03 \x03(\x05\"F\n\x08OilGroup\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x12\n\x04oils\x18\x02 \x03(\x0b\x32\x04.Oil\x12\x18\n\x10refinement_limit\x18\x03 \x01(\x05\"\xcf\x01\n\x07Problem\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x1b\n\x13\x66inal_product_price\x18\x02 \x01(\x05\x12\x1d\n\noil_groups\x18\x03 \x03(\x0b\x32\t.OilGroup\x12\x15\n\rstorage_limit\x18\x04 \x01(\x05\x12\x14\n\x0cstorage_cost\x18\x05 \x01(\x05\x12\x1c\n\x14hardness_lower_limit\x18\x06 \x01(\x05\x12\x1c\n\x14hardness_upper_limit\x18\x07 \x01(\x05\x12\x11\n\tn_periods\x18\x08 \x01(\x05\x62\x06proto3'
 )
 
 
@@ -45,6 +45,13 @@ _OIL = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='prices', full_name='Oil.prices', index=2,
+      number=3, type=5, cpp_type=1, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
@@ -58,7 +65,7 @@ _OIL = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=22,
-  serialized_end=59,
+  serialized_end=75,
 )
 
 
@@ -84,7 +91,7 @@ _OILGROUP = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='limit', full_name='OilGroup.limit', index=2,
+      name='refinement_limit', full_name='OilGroup.refinement_limit', index=2,
       number=3, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -102,8 +109,8 @@ _OILGROUP = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=61,
-  serialized_end=120,
+  serialized_start=77,
+  serialized_end=147,
 )
 
 
@@ -135,6 +142,41 @@ _PROBLEM = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='storage_limit', full_name='Problem.storage_limit', index=3,
+      number=4, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='storage_cost', full_name='Problem.storage_cost', index=4,
+      number=5, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='hardness_lower_limit', full_name='Problem.hardness_lower_limit', index=5,
+      number=6, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='hardness_upper_limit', full_name='Problem.hardness_upper_limit', index=6,
+      number=7, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='n_periods', full_name='Problem.n_periods', index=7,
+      number=8, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
@@ -147,8 +189,8 @@ _PROBLEM = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=122,
-  serialized_end=205,
+  serialized_start=150,
+  serialized_end=357,
 )
 
 _OILGROUP.fields_by_name['oils'].message_type = _OIL

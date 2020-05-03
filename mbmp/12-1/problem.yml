@@ -1,0 +1,35 @@
+name: "Food Manufacture 1"
+final_product_price: 150
+
+storage_limit: 1000
+storage_cost: 5
+
+hardness_lower_limit: 3
+hardness_upper_limit: 6
+
+n_periods: 6
+
+oil_groups:
+
+  - name: "VEGETABLE"
+    refinement_limit: 200
+    oils:
+      - name: "VEG1"
+        hardness: 8.8
+        prices: [110, 130, 110, 120, 100, 90]
+      - name: "VEG2"
+        hardness: 6.1
+        prices: [120, 130, 140, 110, 120, 140]
+
+  - name: "NON_VEGETABLE"
+    refinement_limit: 250
+    oils:
+      - name: "OIL1"
+        hardness: 2.0
+        prices: [130, 110, 130, 120, 150, 140]
+      - name: "OIL2"
+        hardness: 4.2
+        prices: [110, 90, 100, 120, 110, 80]
+      - name: "OIL3"
+        hardness: 5.0
+        prices: [115, 115, 95, 125, 105, 135]

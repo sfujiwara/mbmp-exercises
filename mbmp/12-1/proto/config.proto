@@ -3,16 +3,22 @@ syntax = "proto3";
 message Oil {
   string name = 1;
   float hardness = 2;
+  repeated int32 prices = 3;
 }
 
 message OilGroup {
   string name = 1;
   repeated Oil oils = 2;
-  int32 limit = 3;
+  int32 refinement_limit = 3;
 }
 
 message Problem {
   string name = 1;
   int32 final_product_price = 2;
   repeated OilGroup oil_groups = 3;
+  int32 storage_limit = 4;
+  int32 storage_cost = 5;
+  int32 hardness_lower_limit = 6;
+  int32 hardness_upper_limit = 7;
+  int32 n_periods = 8;
 }
