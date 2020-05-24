@@ -110,7 +110,6 @@ def main():
         y[m] = pulp.LpVariable(name=f'TOTAL_USE_MONTH{m+1}', lowBound=0)
 
     # Constraints for total use.
-    # TODO
     for m in range(n_months):
         lhs = 0
         for og in range(n_oil_groups):
@@ -147,7 +146,7 @@ def main():
                 v_buy = buy[og][o, m]
                 print(f'{v_use.name}: {v_use.value()}\t\t{v_buy.name}: {v_buy.value()}')
 
-    import IPython; IPython.embed()
+    # import IPython; IPython.embed()
 
 
 if __name__ == '__main__':
