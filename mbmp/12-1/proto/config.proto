@@ -20,5 +20,5 @@ message Problem {
   int32 storage_cost = 5;
   int32 hardness_lower_limit = 6;
   int32 hardness_upper_limit = 7;
-  int32 n_periods = 8;
+  int32 n_months = 8;
 }

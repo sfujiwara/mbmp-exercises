@@ -319,6 +319,17 @@ version = "8.2.0"
 
 [[package]]
 category = "main"
+description = "Generate mypy stub files from protobuf specs"
+name = "mypy-protobuf"
+optional = false
+python-versions = "*"
+version = "1.20"
+
+[package.dependencies]
+protobuf = ">=3.6.0"
+
+[[package]]
+category = "main"
 description = "Converting Jupyter Notebooks"
 name = "nbconvert"
 optional = false
@@ -419,7 +430,6 @@ version = "1.4.2"
 [[package]]
 category = "main"
 description = "A Python Parser"
-marker = "python_version >= \"3.3\""
 name = "parso"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
@@ -501,7 +511,7 @@ six = ">=1.9"
 [[package]]
 category = "main"
 description = "Run a subprocess in a pseudo terminal"
-marker = "python_version >= \"3.3\" and sys_platform != \"win32\" or os_name != \"nt\""
+marker = "python_version >= \"3.3\" and sys_platform != \"win32\" or sys_platform != \"win32\" or os_name != \"nt\" or python_version >= \"3.3\" and sys_platform != \"win32\" and (python_version >= \"3.3\" and sys_platform != \"win32\" or sys_platform != \"win32\")"
 name = "ptyprocess"
 optional = false
 python-versions = "*"
@@ -759,7 +769,7 @@ docs = ["sphinx", "jaraco.packaging (>=3.2)", "rst.linker (>=1.9)"]
 testing = ["jaraco.itertools", "func-timeout"]
 
 [metadata]
-content-hash = "a40ae844866728ffe3549f15fc4bc4854f5c39cbb0c3e9efecb789cbd1671243"
+content-hash = "0e1f3c84937d7dd14b55963f6bf0957fb9223c198b943c5a67e44d0c9da61cfd"
 python-versions = "^3.7"
 
 [metadata.files]
@@ -890,6 +900,10 @@ mistune = [
 more-itertools = [
     {file = "more-itertools-8.2.0.tar.gz", hash = "sha256:b1ddb932186d8a6ac451e1d95844b382f55e12686d51ca0c68b6f61f2ab7a507"},
     {file = "more_itertools-8.2.0-py3-none-any.whl", hash = "sha256:5dd8bcf33e5f9513ffa06d5ad33d78f31e1931ac9a18f33d37e77a180d393a7c"},
+]
+mypy-protobuf = [
+    {file = "mypy-protobuf-1.20.tar.gz", hash = "sha256:2f0f7d81d6d32c1b2d7740f425450fda10fc3f85ef9b8729dfabb70b778a420e"},
+    {file = "mypy_protobuf-1.20-py3-none-any.whl", hash = "sha256:433bd7d544f52bf8aeab6a47b389a69419d42b02aa264ad73d05ac26534fb164"},
 ]
 nbconvert = [
     {file = "nbconvert-5.6.1-py2.py3-none-any.whl", hash = "sha256:f0d6ec03875f96df45aa13e21fd9b8450c42d7e1830418cccc008c0df725fcee"},

@@ -18,7 +18,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   package='',
   syntax='proto3',
   serialized_options=None,
-  serialized_pb=b'\n\x12proto/config.proto\"5\n\x03Oil\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x10\n\x08hardness\x18\x02 \x01(\x02\x12\x0e\n\x06prices\x18\x03 \x03(\x05\"F\n\x08OilGroup\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x12\n\x04oils\x18\x02 \x03(\x0b\x32\x04.Oil\x12\x18\n\x10refinement_limit\x18\x03 \x01(\x05\"\xcf\x01\n\x07Problem\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x1b\n\x13\x66inal_product_price\x18\x02 \x01(\x05\x12\x1d\n\noil_groups\x18\x03 \x03(\x0b\x32\t.OilGroup\x12\x15\n\rstorage_limit\x18\x04 \x01(\x05\x12\x14\n\x0cstorage_cost\x18\x05 \x01(\x05\x12\x1c\n\x14hardness_lower_limit\x18\x06 \x01(\x05\x12\x1c\n\x14hardness_upper_limit\x18\x07 \x01(\x05\x12\x11\n\tn_periods\x18\x08 \x01(\x05\x62\x06proto3'
+  serialized_pb=b'\n\x12proto/config.proto\"5\n\x03Oil\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x10\n\x08hardness\x18\x02 \x01(\x02\x12\x0e\n\x06prices\x18\x03 \x03(\x05\"F\n\x08OilGroup\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x12\n\x04oils\x18\x02 \x03(\x0b\x32\x04.Oil\x12\x18\n\x10refinement_limit\x18\x03 \x01(\x05\"\xce\x01\n\x07Problem\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x1b\n\x13\x66inal_product_price\x18\x02 \x01(\x05\x12\x1d\n\noil_groups\x18\x03 \x03(\x0b\x32\t.OilGroup\x12\x15\n\rstorage_limit\x18\x04 \x01(\x05\x12\x14\n\x0cstorage_cost\x18\x05 \x01(\x05\x12\x1c\n\x14hardness_lower_limit\x18\x06 \x01(\x05\x12\x1c\n\x14hardness_upper_limit\x18\x07 \x01(\x05\x12\x10\n\x08n_months\x18\x08 \x01(\x05\x62\x06proto3'
 )
 
 
@@ -171,7 +171,7 @@ _PROBLEM = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
-      name='n_periods', full_name='Problem.n_periods', index=7,
+      name='n_months', full_name='Problem.n_months', index=7,
       number=8, type=5, cpp_type=1, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
@@ -190,7 +190,7 @@ _PROBLEM = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=150,
-  serialized_end=357,
+  serialized_end=356,
 )
 
 _OILGROUP.fields_by_name['oils'].message_type = _OIL

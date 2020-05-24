@@ -1,4 +1,4 @@
-name: "Food Manufacture 1"
+name: "FOOD_MANUFACTURE_1"
 final_product_price: 150
 oil_groups {
   name: "VEGETABLE"
@@ -62,4 +62,4 @@ storage_limit: 1000
 storage_cost: 5
 hardness_lower_limit: 3
 hardness_upper_limit: 6
-n_periods: 6
+n_months: 6

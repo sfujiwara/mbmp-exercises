@@ -11,6 +11,7 @@ pyyaml = "^5.3.1"
 protobuf = "^3.11.3"
 jupyter = "^1.0.0"
 numpy = "^1.18.3"
+mypy-protobuf = "^1.20"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
