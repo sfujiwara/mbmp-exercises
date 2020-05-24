@@ -12,6 +12,7 @@ protobuf = "^3.11.3"
 jupyter = "^1.0.0"
 numpy = "^1.18.3"
 mypy-protobuf = "^1.20"
+mypy = "^0.770"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
